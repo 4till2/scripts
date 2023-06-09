@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"enroll_test.sponsored_benefits_locations_addresses"}],"uuid":"aa59a6b6e93743a4b317a97723a7512c","collectionName":"sponsored_benefits_locations_addresses","type":"collection"}

@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"enroll_development.ach_records"},{"v":{"$numberInt":"2"},"unique":true,"key":{"routing_number":{"$numberInt":"1"}},"name":"routing_number_1","ns":"enroll_development.ach_records","background":false}],"uuid":"7b516593e3eb47afac3eb634a18ee6e0","collectionName":"ach_records"}

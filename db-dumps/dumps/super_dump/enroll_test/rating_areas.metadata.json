@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"enroll_test.rating_areas"}],"uuid":"e4915e882b554f8b9dfb36d310a0ed37","collectionName":"rating_areas","type":"collection"}
