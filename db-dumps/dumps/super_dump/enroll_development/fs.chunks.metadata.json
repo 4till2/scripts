@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"enroll_development.fs.chunks"},{"v":{"$numberInt":"2"},"unique":true,"key":{"files_id":{"$numberInt":"1"},"n":{"$numberInt":"-1"}},"name":"files_id_1_n_-1","ns":"enroll_development.fs.chunks","background":false}],"uuid":"76cdc15389794bbe9c49a67258e154a2","collectionName":"fs.chunks"}

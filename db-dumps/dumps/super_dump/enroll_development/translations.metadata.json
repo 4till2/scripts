@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"enroll_development.translations"}],"uuid":"bd85a77a9e194a3da8e7f5f3e90e3402","collectionName":"translations"}

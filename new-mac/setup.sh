@@ -310,6 +310,7 @@ brew bundle --file=- <<EOF || true # Continue with script on error
 tap "homebrew/services"
 tap "mongodb/brew"
 
+brew "tmux"
 brew "git"
 brew "zsh"
 brew "rabbitmq"
@@ -382,6 +383,7 @@ repos=(
   "git@github.com:ideacrew/medicaid_gateway.git"
   "git@github.com:ideacrew/medicaid_eligibility.git"
   "git@github.com:ideacrew/polypress.git"
+  "git@github.com:4till2/ideacrew-db-dumps.git"
 )
 
 createDirectory $PROJECT_FOLDER
@@ -404,7 +406,7 @@ git fetch
 git checkout -B 2022_update origin/2022_update
 cp ./env-example.dev env.dev
 
-fancy_echo "In the future you can now start your local development environment by opening Docker Desktop and running docker-compose up within $PROJECT_FOLDER/ea_enterprise. This time we'll do it for you ;)"
+printHighlightYellow "In the future you can now start your local development environment by opening Docker Desktop and running docker-compose up within $PROJECT_FOLDER/ea_enterprise. This time we'll do it for you ;)"
 
 printHeading "Starting containers"
 # Check if Docker daemon is running
@@ -417,4 +419,15 @@ done
 echo "Docker daemon is running."
 echo "Starting Docker..."
 
-docker-compose up
+tmux new-session -d -s dockersession "docker-compose up -d"
+
+# Check if the Docker image is running
+while ! docker ps --format "{{.Image}}" | grep mongo &>/dev/null; do
+   echo "Waiting for Mongo image to be running."
+   sleep 3
+done
+
+printHeading "Restoring data dump"
+echo "Mongo is running."
+docker compose cp $PROJECT_FOLDER/ideacrew-db-dumps/super_dump/. mongodb:/dump
+docker-compose exec mongodb mongorestore --drop

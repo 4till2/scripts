@@ -70,10 +70,12 @@ Unix tools:
 * [Git] for version control
 * [Zsh] as your shell
 * [Docker] for developing (you may need to download Docker Desktop manually if the script fails to do so)
+* [Tmux] for saving project state and switching between projects
 
 [Git]: https://git-scm.com/
 [Zsh]: http://www.zsh.org/
 [Docker]: https://docker.com
+[Tmux]: https://github.com/tmux/tmux/wiki
 
 Programming languages, package managers, and configuration:
 
@@ -105,10 +107,11 @@ Repositories:
 - https://github.com/ideacrew/medicaid_gateway.git
 - https://github.com/ideacrew/medicaid_eligibility.git
 - https://github.com/ideacrew/polypress.git
+- https://github.com/4till2/ideacrew-db-dumps
 
 Docker:
 
-Once the repositories are downloaded we start Docker and you are ready to develop!
+Once the repositories are downloaded we start Docker, restore the database with a data dump. 
 
 ---
 

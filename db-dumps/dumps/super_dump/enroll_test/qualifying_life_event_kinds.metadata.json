@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"enroll_test.qualifying_life_event_kinds"}],"uuid":"7731ec0324f84743a5724853ba67d225","collectionName":"qualifying_life_event_kinds","type":"collection"}

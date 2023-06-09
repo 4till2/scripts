@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"medicaid_gateway_test.permissions"}],"uuid":"1ed64730edf04ff8a049e6f34a9e28f4","collectionName":"permissions","type":"collection"}

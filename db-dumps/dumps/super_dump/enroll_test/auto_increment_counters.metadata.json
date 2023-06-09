@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"enroll_test.auto_increment_counters"}],"uuid":"a33bb5e6c5724d68ac18b4a2926234f8","collectionName":"auto_increment_counters","type":"collection"}

@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"enroll_test.hbx_enrollments"}],"uuid":"708f07abcb9641e1b3a6f4ebf99e145e","collectionName":"hbx_enrollments","type":"collection"}
