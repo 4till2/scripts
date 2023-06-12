@@ -105,6 +105,7 @@ Repositories:
 > This is configured in previous steps.
 > In the future you should do the same.
 - https://github.com/ideacrew/ea_enterprise.git
+- https://github.com/ideacrew/enroll.git
 - https://github.com/ideacrew/fdsh_gateway.git
 - https://github.com/ideacrew/medicaid_gateway.git
 - https://github.com/ideacrew/medicaid_eligibility.git
