@@ -383,7 +383,6 @@ repos=(
   "git@github.com:ideacrew/medicaid_gateway.git"
   "git@github.com:ideacrew/medicaid_eligibility.git"
   "git@github.com:ideacrew/polypress.git"
-  "git@github.com:4till2/ideacrew-db-dumps.git"
 )
 
 createDirectory $PROJECT_FOLDER
@@ -426,8 +425,10 @@ while ! docker ps --format "{{.Image}}" | grep mongo &>/dev/null; do
    echo "Waiting for Mongo image to be running."
    sleep 3
 done
-
-printHeading "Restoring data dump"
 echo "Mongo is running."
-docker compose cp $PROJECT_FOLDER/ideacrew-db-dumps/super_dump/. mongodb:/dump
-docker-compose exec mongodb mongorestore --drop
+
+printHeading "You'll want to restore the database. You can reach out to someone for a datadump and then run..."
+cat <<"EOT"
+  docker compose cp $PROJECT_FOLDER/ideacrew-db-dumps/super_dump/. mongodb:/dump
+  docker-compose exec mongodb mongorestore --drop
+EOT
