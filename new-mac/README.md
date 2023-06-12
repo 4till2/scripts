@@ -1,3 +1,5 @@
+> ⚠️ This script is a work in progress and not yet well tested!
+
 Setup
 ======
 
