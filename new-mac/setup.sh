@@ -403,7 +403,7 @@ done
 cd $PROJECT_FOLDER/ea_enterprise/
 git fetch
 git checkout -B 2022_update origin/2022_update
-cp ./env-example.dev .env
+cp ./env-example.dev env.dev
 
 printHighlightYellow "In the future you can now start your local development environment by opening Docker Desktop and running docker-compose up within $PROJECT_FOLDER/ea_enterprise. This time we'll do it for you ;)"
 
